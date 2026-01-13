@@ -1,5 +1,6 @@
 flask
 requests
+gunicorn
 beautifulsoup4
 urllib3
 beautifulsoup4
