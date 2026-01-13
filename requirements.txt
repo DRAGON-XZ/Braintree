@@ -1,15 +1,8 @@
---only-binary=:all:
-flask==3.0.1
-requests==2.31.0
-gunicorn==21.2.0
-python-dotenv==1.0.0
-flask-cors==4.0.1
-playwright==1.40.0
-beautifulsoup4==4.12.2
-aiohttp==3.9.5
-httpx==0.27.0
-fake-useragent==1.5.1
-Faker==24.4.0
-greenlet==3.0.3
-gevent==24.2.1
-Flask-Limiter==4.0.0      # Latest stable
+flask
+requests
+beautifulsoup4
+urllib3
+beautifulsoup4
+flask
+requests
+urllib3      # Latest stable
