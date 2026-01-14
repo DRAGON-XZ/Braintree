@@ -324,7 +324,7 @@ Card: {n}|{mm}|{yy}|{cvc}
 Response: {response_msg}
 Gateway: Braintree Auth (New Logic)
 Time: {elapsed_time:.1f}s
-Bot By: @FailureFr
+Bot By: @DRAGON_XZ
 =========================
 
 """)
