@@ -48,7 +48,7 @@ class BraintreeLoginChecker:
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         }
         # Known auth token from the new script
-        self.known_auth_token = "eyJraWQiOiIyMDE4MDQyNjE2LXByb2R1Y3Rpb24iLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFsZyI6IkVTMjU2In0.eyJleHAiOjE3Njg1MDcxNDEsImp0aSI6IjU1OTJkMWQ5LTkzNjQtNGM5Yi05MGZjLTI0YmRmN2QyMmZlNCIsInN1YiI6IjNteWQ5cXJxemZqa3c5NDQiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6IjNteWQ5cXJxemZqa3c5NDQiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0IjpmYWxzZSwidmVyaWZ5X3dhbGxldF9ieV9kZWZhdWx0IjpmYWxzZX0sInJpZ2h0cyI6WyJtYW5hZ2VfdmF1bHQiXSwic2NvcGUiOlsiQnJhaW50cmVlOlZhdWx0IiwiQnJhaW50cmVlOkNsaWVudFNESyJdLCJvcHRpb25zIjp7fX0.evQZ63YLNEce6ApW5LgjcBKZl1Aj9_oxz8HuadqJHkVsNl0Lb1jZ8FwnVvpNjT56d-84YGpchCJaudV6rsSw0w"
+        self.known_auth_token = "eyJraWQiOiIyMDE4MDQyNjE2LXByb2R1Y3Rpb24iLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsImFsZyI6IkVTMjU2In0.eyJleHAiOjE3Njg2NDE0MTYsImp0aSI6IjY0MmFmOTllLWNiYzctNDJmOS1iYTg5LTYwOTY1MzU1NGIwMCIsInN1YiI6IjNteWQ5cXJxemZqa3c5NDQiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6IjNteWQ5cXJxemZqa3c5NDQiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0IjpmYWxzZSwidmVyaWZ5X3dhbGxldF9ieV9kZWZhdWx0IjpmYWxzZX0sInJpZ2h0cyI6WyJtYW5hZ2VfdmF1bHQiXSwic2NvcGUiOlsiQnJhaW50cmVlOlZhdWx0IiwiQnJhaW50cmVlOkNsaWVudFNESyJdLCJvcHRpb25zIjp7fX0.8sBjmhyaJRivOc96nJBzW-rezf5AL9A56veHsczGlW-bNfCDJXXh_N6oT5b8y8wNGobi7PGsSLbeq5g4-3Aa_g"
     
     def login(self, domain, username, password):
         login_url = f"{domain}/my-account/"
@@ -324,7 +324,7 @@ Card: {n}|{mm}|{yy}|{cvc}
 Response: {response_msg}
 Gateway: Braintree Auth (New Logic)
 Time: {elapsed_time:.1f}s
-Bot By: @DRAGON_XZ
+Bot By: @FailureFr
 =========================
 
 """)
