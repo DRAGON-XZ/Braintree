@@ -6,4 +6,5 @@ urllib3
 beautifulsoup4
 flask
 requests
-urllib3      # Latest stable
+urllib3
+pyrogram   # Latest stable
