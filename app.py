@@ -39,15 +39,15 @@ def run_pyrogram_background():
 
     logger.info("Background thread: Loop created.")
 
-    pyrogram_client = Client(
-        name="user_session",
-        api_id=API_ID,
-        api_hash=API_HASH,
-        session_string=SESSION_STRING,
-        in_memory=True
-    )
-
     async def start_client():
+        global pyrogram_client
+        pyrogram_client = Client(
+            name="user_session",
+            api_id=API_ID,
+            api_hash=API_HASH,
+            session_string=SESSION_STRING,
+            in_memory=True
+        )
         await pyrogram_client.start()
         logger.info("Background thread: Pyrogram Connected Successfully.")
         startup_event.set()
