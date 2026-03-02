@@ -7,4 +7,5 @@ beautifulsoup4
 flask
 requests
 urllib3
-pyrogram   # Latest stable
+pyrogram   
+tgcrypto       # Latest stable
