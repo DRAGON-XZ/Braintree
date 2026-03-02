@@ -8,11 +8,16 @@ from flask import Flask, jsonify
 from pyrogram import Client
 
 # ─── CONFIGURATION ───
-API_ID = 39761812
-API_HASH = "08eb23e7f0599533829fbd4b6f2d8eb5"
-SESSION_STRING = "BQJQHbUAFy4QbKPRHo1Qysl2cta6AAtONzwE2ZRfSm1zJ-ArQkKTl9XJ94suQLXQf0puoiQLu50XLQfsjqFgFQBa10UG2qpOlYfsGGIMUjPOoGIQ9IaFyn0zjeaoC8yFYmgFAHXH6AO_W3_HYDlumn9iyBW6Fo1X68z-mrgKJgSiGf8rJ_YB4H1wPBtN9_meRv1ihhaav_6WeBR0NVkV_Gd0wiI_TKsnmaVIH4Qxkix4Pc95qBxJvH_xGZSs9Q3_Qy22DlWETi8iLVBxoNA5xrG7rQ-TsYltVmwXP3PMG2ZD04vngZg6MpXZlaJIgsaG1Hq3YJh_gzk66r9sPd-wUZJ6KH5LvQAAAAH8UswQAA"
+API_ID = 34231766
+API_HASH = "04adf4bfb194961bb25c3cd44f2726e6"
+SESSION_STRING = "MIIBCgKCAQEAyMEdY1aR+sCR3ZSJrtztKTKqigvO/vBfqACJLZtS7QMgCGXJ6XIR
+yy7mx66W0/sOFa7/1mAZtEoIokDP3ShoqF4fVNb6XeqgQfaUHd8wJpDWHcR2OFwv
+plUUI1PLTktZ9uW2WE23b+ixNwJjJGwBDJPQEQFBE+vfmH0JP503wr5INS1poWg/
+j25sIWeYPHYeOrFp/eXaqhISP6G+q2IeTaWTXpwZj4LzXq5YOpk4bYEQ6mvRq7D1
+aHWfYmlEGepfaYR8Q0YqvvhYtMte3ITnuSJs171+GDqpdKcSwHnd6FudwGO4pcCO
+j4WcDuXc2CTHgH8gFTNhp/Y8/SpDOhvn9QIDAQAB"
 
-TARGET_BOT = "@newpayubot"
+TARGET_BOT = "@SSCCGenbot"
 
 # ─── FLASK APP ───
 app = Flask(__name__)
@@ -139,9 +144,9 @@ def check_gate_b3(cc_details):
         if "Too many purchase attempts" in raw_response:
             final_response_text = "Server Overloaded please wait for few minutes......"
             status = "DECLINED"
-        elif "Card Added Successfully" in raw_response:
+        elif "Payment method successfully added." in raw_response:
             status = "APPROVED"
-            final_response_text = "Payment method added"
+            final_response_text = "Payment method successfully added."
         elif "Username not found" in raw_response:
             status = "ERROR"
             final_response_text = "Restricted Account / Bot Not Found"
